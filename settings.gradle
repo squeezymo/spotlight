@@ -1,4 +1,4 @@
+rootProject.name = "spotlight"
 include ':overlay'
 include ':demo'
-rootProject.name = "overlay"
 include ':tooltiparrow'
