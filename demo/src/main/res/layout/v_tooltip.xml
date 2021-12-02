@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@android:color/black"
+    tools:layout_height="wrap_content"
+    tools:layout_width="wrap_content"
+    tools:orientation="vertical"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <!--    <me.squeezymo.spotlight.tooltiparrow.ArrowView-->
+    <!--        android:id="@+id/arrow_av"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginHorizontal="5dp"-->
+    <!--        app:av_arrowheadEnabled="true"-->
+    <!--        app:av_arrowheadHeight="12dp"-->
+    <!--        app:av_arrowheadMargin="8dp"-->
+    <!--        app:av_arrowheadWidth="8dp"-->
+    <!--        app:av_color="@color/white"-->
+    <!--        app:av_length="48dp"-->
+    <!--        app:av_width="2dp"-->
+    <!--        app:av_wiggleFactor="0.9"-->
+    <!--        tools:av_bearingDegrees="45"-->
+    <!--        tools:layout_gravity="end"-->
+    <!--        tools:layout_marginBottom="8dp" />-->
+
+    <TextView
+        android:id="@+id/helper_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:maxWidth="192dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="A relatively short text describing accented feature" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/acknowledge_btn"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/tooltip.next"
+        android:textStyle="bold" />
+
+</merge>

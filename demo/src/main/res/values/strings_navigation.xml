@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="movies_fragment_label">Movies</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout_height="wrap_content"
+    tools:layout_width="match_parent"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <ImageView
+        android:id="@+id/poster_iv"
+        android:layout_width="96dp"
+        android:layout_height="144dp"
+        android:contentDescription="@string/movie.poster"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/poster_jaws" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/poster_iv"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Jaws" />
+
+    <TextView
+        android:id="@+id/director_and_release_year_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/poster_iv"
+        app:layout_constraintTop_toBottomOf="@id/title_tv"
+        tools:text="by Steven Spielberg, 1974" />
+
+    <TextView
+        android:id="@+id/synopsis_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/poster_iv"
+        app:layout_constraintTop_toBottomOf="@+id/director_and_release_year_tv"
+        tools:text="@tools:sample/lorem" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.5"
+        android:background="@color/gray_bleak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/poster_iv"
+        app:layout_constraintTop_toBottomOf="@+id/synopsis_tv" />
+
+    <TextView
+        android:id="@+id/rating_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="4dp"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:text="7/10"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+        app:drawableEndCompat="@drawable/ic_star"
+        app:drawableTint="@color/gold"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/poster_iv"
+        app:layout_constraintTop_toBottomOf="@+id/divider1"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/share_iv"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/movie.like_unlike"
+        android:src="@drawable/ic_share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/poster_iv"
+        app:layout_constraintTop_toBottomOf="@+id/divider1"
+        app:tint="@color/share" />
+
+    <ImageView
+        android:id="@+id/toggle_fav_iv"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/movie.like_unlike"
+        android:src="@drawable/ic_heart"
+        app:layout_constraintEnd_toStartOf="@+id/share_iv"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/poster_iv"
+        app:layout_constraintTop_toBottomOf="@+id/divider1"
+        app:tint="@color/heart" />
+
+</merge>

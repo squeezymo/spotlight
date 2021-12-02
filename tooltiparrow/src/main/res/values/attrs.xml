@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ArrowView">
+        <attr name="av_bearingDegrees" format="float" />
+        <attr name="av_length" format="dimension" />
+        <attr name="av_width" format="dimension" />
+        <attr name="av_color" format="color" />
+        <attr name="av_wiggleFactor" format="float" />
+        <attr name="av_arrowheadEnabled" format="boolean" />
+        <attr name="av_arrowheadMargin" format="dimension" />
+        <attr name="av_arrowheadWidth" format="dimension" />
+        <attr name="av_arrowheadHeight" format="dimension" />
+    </declare-styleable>
+
+</resources>
